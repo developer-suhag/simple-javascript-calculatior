@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple JavaScript Calculator</title>
+    <!-- favicon  -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!-- Tailwind css  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .colored-bg {
+        background: #16a085;
+      }
+      .colored-bg:hover {
+        background: #1abc9c;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-r from-green-400 via-indigo-500 to-blue-500 p-8">
+    <header>
+      <div class="flex justify-center mb-6">
+        <img src="images/calculator (1).png" alt="" />
+      </div>
+      <h1 class="text-5xl uppercase text-center font-bold text-purple-100">
+        Simple JavaScript Calculator
+      </h1>
+    </header>
+    <main>
+      <section class="p-8 w-1/4 mx-auto bg-gray-200 m-8 rounded-2xl shadow-2xl">
+        <div class="calculatior">
+          <div
+            class="
+              calculator-top
+              h-20
+              py-2
+              px-6
+              bg-gray-600
+              rounded
+              text-white
+              flex
+              items-end
+              flex-col
+            "
+          >
+            <div class="previous-operand text-sm">55</div>
+            <div class="current-operand text-2xl">70</div>
+          </div>
+          <div class="calculator-body p-4 text-white text-2xl">
+            <div class="body-top grid grid-cols-4 gap-2">
+              <button class="col-span-2 colored-bg font-medium p-2 rounded">
+                AC
+              </button>
+              <button class="colored-bg font-medium p-2 rounded">DEL</button>
+              <button class="colored-bg font-medium p-2 rounded">÷</button>
+            </div>
+            <div class="body-bottom grid grid-cols-4 gap-2 my-4">
+              <button class="colored-bg font-medium p-2 rounded">7</button>
+              <button class="colored-bg font-medium p-2 rounded">8</button>
+              <button class="colored-bg font-medium p-2 rounded">9</button>
+              <button class="colored-bg font-medium p-2 rounded">*</button>
+              <button class="colored-bg font-medium p-2 rounded">4</button>
+              <button class="colored-bg font-medium p-2 rounded">5</button>
+              <button class="colored-bg font-medium p-2 rounded">6</button>
+              <button class="colored-bg font-medium p-2 rounded">+</button>
+              <button class="colored-bg font-medium p-2 rounded">1</button>
+              <button class="colored-bg font-medium p-2 rounded">2</button>
+              <button class="colored-bg font-medium p-2 rounded">3</button>
+              <button class="colored-bg font-medium p-2 rounded">-</button>
+              <button class="colored-bg font-medium p-2 rounded">0</button>
+              <button class="colored-bg font-medium p-2 rounded">.</button>
+              <button class="col-span-2 colored-bg font-medium p-2 rounded">
+                =
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
